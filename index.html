@@ -20,20 +20,22 @@
       </header>
 
       <main>
-        <form id="story-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the children's story"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-input"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-
-        <div class="child-story" id="child-story"></div>
+        <div class="form-container">
+          <form id="story-generator-form">
+            <input
+              type="text"
+              placeholder="What would your like your AI-generated story to be about?"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-input"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="example">e.g. a rabbit, a teddy bear, a dog</div>
+        </div>
+        <div class="story hidden" id="story"></div>
       </main>
 
       <footer>

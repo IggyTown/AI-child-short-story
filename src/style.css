@@ -39,10 +39,21 @@ h1 {
   color: #272044;
 }
 
-form {
-  padding: 30px;
-  display: flex;
+.form-container {
   margin-bottom: 30px;
+  padding: 30px;
+}
+
+form {
+  display: flex;
+}
+.example {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 20px;
+  opacity: 0.6;
+  font-style: italic;
 }
 
 .instructions {
@@ -75,17 +86,37 @@ form {
   font-weight: bold;
 }
 
-.child-story {
+.story {
   font-size: 15px;
   background-color: #f9f7fe;
   padding: 20px;
   line-height: 2;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
   border-radius: 15px;
+  text-align: justify;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
   text-align: center;
   font-size: 15px;
   margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
