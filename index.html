@@ -4,13 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <title>AI Child's Short Story Generator</title>
   </head>
 
   <body>
-    <h1>Welcome to the AI Child's Short Story Generator</h1>
+    <header>
+      <h1>Welcome to the AI Children's Short Story Generator</h1>
+    </header>
+
+    <main>
+      <form action="">
+        <input
+          type="text"
+          placeholder="Enter the topic of the children's story"
+          autofocus
+          required
+          autocomplete="off"
+        />
+        <input type="submit" />
+      </form>
+      <div>
+        The story will go here
+        <br />
+      </div>
+    </main>
+
+    <footer>
+      This project was coded by IggyT and is
+      <a href="//github.com/IggyTown/AI-child-short-story" target="_blank"
+        >opened-sourced on Github
+      </a>
+      and is <a>hosted on Netlify</a>.
+    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
