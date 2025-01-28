@@ -18,7 +18,6 @@ function generateStory(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let storyElement = document.querySelector('#child-story');
-  storyElement.classList.remove('hidden');
   storyElement.innerHTML = `<div class="generating">⏳ Generating a short story about ${instructionsInput.value}</div>`;
 
   axios.get(apiUrl).then(displayStory);
