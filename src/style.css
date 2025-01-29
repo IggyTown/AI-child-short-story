@@ -56,6 +56,10 @@ form {
   font-style: italic;
 }
 
+.emoji {
+  font-style: normal;
+}
+
 .instructions {
   padding: 15px;
   border: 1px rgba(39, 33, 66, 0.5);
